@@ -1,3 +1,6 @@
+prequisites:
+  spack install mpich
+
 install:
   #!/usr/bin/env bash
   # git clone https://github.com/lanl/vpic-kokkos.git
@@ -5,5 +8,5 @@ install:
   git checkout hybridVPIC
   mkdir build
   cd build
-  ccmake ..
+  cmake ..
   make -j
