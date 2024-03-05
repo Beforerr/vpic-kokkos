@@ -1,9 +1,3 @@
-home_dir := env_var('HOME')
-vpic := home_dir + "/projects/vpic-kokkos/build/bin/vpic"
-
-compile:
-    {{vpic}} *.cxx
-
 run:
     #!/usr/bin/env bash
     export DATADIR=/glade/derecho/scratch/$USER/pcai
