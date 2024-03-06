@@ -1,5 +1,0 @@
-home_dir := env_var('HOME')
-vpic := home_dir + "/projects/vpic-kokkos/build/bin/vpic"
-
-compile:
-    {{vpic}} *.cxx
