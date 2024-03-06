@@ -14,6 +14,8 @@ install:
   git checkout hybridVPIC
   mkdir build
   cd build
+
+  spack load mpich gcc
   cmake ..
   make -j 8
 
